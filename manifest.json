@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "init",
+  "version": "0.1",
+  "icons": {
+    "128": "icon.png",
+    "128": "icon.png",
+    "128": "icon.png",
+    "128": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": ["jquery-3.5.1.min.js", "content.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_icon": "icon.png"
+  }
+}
